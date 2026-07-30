@@ -8,9 +8,8 @@ pipeline {
     stages {
         stage('Docker Version') {
             steps {
-    HEAD
+
                 bat '"%DOCKER%" --version'
-=======
                 git branch: 'main', url: 'https://github.com/RakshithaVanarcha09/First-.git' e21492ae57171672fc746087c96b2bfc18195094
             }
         }
