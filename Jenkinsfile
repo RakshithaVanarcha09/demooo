@@ -15,11 +15,11 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                dir('ci-cd-pipeline-main'){
+               
                 bat '"%DOCKER%" build --no-cache -t vite-app .'
             }
         }
-    }
+    
 
         stage('Deploy Container') {
             steps {
